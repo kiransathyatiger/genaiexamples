@@ -1,13 +1,10 @@
 import streamlit as st
 
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 from utils import query_agent
 import os
 
-# load_dotenv()
-os.environ[
-    "OPENAI_API_KEY"
-] = "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"
+load_dotenv()
 
 st.title("Let's do some analysis on your CSV")
 st.header("Please upload your CSV file here:")
